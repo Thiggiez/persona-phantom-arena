@@ -7,17 +7,27 @@
     <style>
         /* General Styling */
         body {
-            background: linear-gradient(135deg, black, darkblue);
-            color: white;
-            font-family: 'Arial', sans-serif;
-            text-align: center;
             margin: 0;
             padding: 0;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            color: white;
+        }
+
+        /* Video Background */
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
         }
 
         /* Header Styling */
         .header {
-            background-color: #222;
+            background-color: rgba(0, 0, 0, 0.6);
             padding: 20px;
             font-size: 2.5em;
             font-weight: bold;
@@ -31,20 +41,9 @@
             max-width: 900px;
             margin: 50px auto;
             padding: 20px;
-            background-color: rgba(34, 34, 34, 0.9);
+            background-color: rgba(34, 34, 34, 0.8);
             border-radius: 10px;
             box-shadow: 0px 0px 20px rgba(0, 0, 255, 0.7);
-        }
-
-        .character-image {
-            width: 200px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 15px rgba(0, 0, 255, 0.7);
-            transition: transform 0.3s;
-        }
-
-        .character-image:hover {
-            transform: scale(1.1);
         }
 
         .character-button {
@@ -67,6 +66,12 @@
     </style>
 </head>
 <body>
+    <!-- Video Background -->
+    <video autoplay loop muted class="video-background">
+        <source src="your-video-file.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
     <div class="header">Persona Phantom Arena</div>
 
     <div class="container">
