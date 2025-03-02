@@ -7,7 +7,7 @@
     <style>
         /* General Styling */
         body {
-            background-color: black;
+            background: linear-gradient(135deg, black, darkblue);
             color: white;
             font-family: 'Arial', sans-serif;
             text-align: center;
@@ -17,32 +17,13 @@
 
         /* Header Styling */
         .header {
-            background-color: red;
+            background-color: #222;
             padding: 20px;
             font-size: 2.5em;
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 2px;
-        }
-
-        /* Navigation Bar */
-        .navbar {
-            display: flex;
-            justify-content: center;
-            background-color: darkred;
-            padding: 10px;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            font-size: 1.2em;
-            transition: background 0.3s;
-        }
-
-        .navbar a:hover {
-            background-color: red;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
         }
 
         /* Main Content Styling */
@@ -52,79 +33,54 @@
             padding: 20px;
             background-color: rgba(34, 34, 34, 0.9);
             border-radius: 10px;
-            box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.7);
+            box-shadow: 0px 0px 20px rgba(0, 0, 255, 0.7);
         }
 
-        .logo {
-            width: 100%;
-            max-width: 500px;
+        .character-image {
+            width: 200px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 255, 0.7);
+            transition: transform 0.3s;
         }
 
-        .intro-text {
-            font-size: 1.3em;
-            margin-top: 20px;
-            line-height: 1.5;
+        .character-image:hover {
+            transform: scale(1.1);
         }
 
-        .button {
+        .character-button {
             display: inline-block;
-            margin-top: 20px;
-            padding: 15px 25px;
-            font-size: 1.3em;
+            background-color: blue;
             color: white;
-            background-color: red;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 8px;
             text-decoration: none;
             transition: background-color 0.3s;
+            margin: 10px;
         }
 
-        .button:hover {
-            background-color: darkred;
-        }
-
-        /* Footer */
-        .footer {
-            margin-top: 30px;
-            padding: 10px;
-            background-color: darkred;
-            font-size: 1em;
+        .character-button:hover {
+            background-color: darkblue;
         }
     </style>
 </head>
 <body>
     <div class="header">Persona Phantom Arena</div>
 
-    <!-- Navigation Menu -->
-    <div class="navbar">
-        <a href="#about">About</a>
-        <a href="#characters">Characters</a>
-        <a href="#gameplay">Gameplay</a>
-        <a href="#contact">Contact</a>
-    </div>
-<div class="character-card">
-    <a href="characters/joker.html" class="character-button">Joker</a>
-</div>
-.character-button {
-    display: inline-block;
-    background-color: red;
-    color: white;
-    padding: 15px 30px;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.character-button:hover {
-    background-color: darkred;
-}
-
-    <div class="footer">
-        &copy; 2024 Persona Phantom Arena | Fan-Made Project | Not affiliated with Atlus or SEGA
+    <div class="container">
+        <h1>Welcome to Persona Phantom Arena</h1>
+        <p>A fan-made Persona-inspired hero shooter concept.</p>
+        
+        <h2>Character Profiles</h2>
+        <div>
+            <a href="characters/joker.html" class="character-button">Joker</a>
+            <a href="characters/ryuji.html" class="character-button">Ryuji</a>
+            <a href="characters/makoto.html" class="character-button">Makoto</a>
+            <a href="characters/yusuke.html" class="character-button">Yusuke</a>
+            <a href="characters/ann.html" class="character-button">Ann</a>
+        </div>
     </div>
 </body>
 </html>
