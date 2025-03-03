@@ -1,1 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sophia - Persona Phantom Arena</title>
+    <style>
+        body {
+            background: url('../images/sophia_bg.png') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: rgba(34, 34, 34, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+        }
+        .character-image {
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.7);
+            transition: transform 0.3s ease;
+        }
+        .character-image:hover {
+            transform: scale(1.05);
+        }
+        .moveset {
+            background-color: rgba(51, 51, 51, 0.9);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+            margin-top: 10px;
+            text-align: left;
+        }
+        .moveset ul {
+            list-style-type: none;
+            padding: 0;
+            color: #ddd;
+        }
+        .moveset ul li {
+            margin: 5px 0;
+        }
+        .moveset strong {
+            color: #ffcc00;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            text-decoration: none;
+            color: white;
+            background: red;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .back-button:hover {
+            background: darkred;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sophia</h1>
+        <p class="quote">"I am humanity's companion!"</p>
+        
+        <img src="../images/sophia.png" alt="Sophia" class="character-image">
+        
+        <h2>Backstory</h2>
+        <p>Sophia is an AI with a kind heart and a desire to understand humanity. 
+        With her Persona, Pandora, she utilizes yo-yo-based combat and light magic to assist her allies.</p>
+
+        <h2>Persona: Pandora</h2>
+        <p>Pandora grants Sophia the ability to use light-based magic and long-range yo-yo strikes.</p>
+        
+        <h2>Character Stats</h2>
+        <ul>
+            <li><strong>Role:</strong> Striker (DPS)</li>
+            <li><strong>Max SP:</strong> 240</li>
+            <li><strong>Mobility:</strong> High</li>
+            <li><strong>Primary Attribute:</strong> Bless Damage</li>
+        </ul>
+
+        <h2>Moveset & SP Costs</h2>
+        <div class="moveset">
+            <ul>
+                <li><strong>Basic Attack (R2):</strong> Strikes with her yo-yos. (No SP)</li>
+                <li><strong>Holding R2:</strong> Unleashes a flurry of yo-yo strikes. (No SP)</li>
+                <li><strong>L2 - Teleport:</strong> Instantly moves to a new location.</li>
+                <li><strong>Triangle - Pandora’s Light:</strong> Sends out energy waves dealing Bless damage. (35 SP)</li>
+                <li><strong>L1 - Blessing Field:</strong> Allies slowly regenerate HP over time. (40 SP)</li>
+                <li><strong>R1 - Chain Combo:</strong> Multi-hit yo-yo strikes that trap enemies. (50 SP)</li>
+                <li><strong>Ultimate - Pandora’s Awakening:</strong> Creates a massive light explosion, damaging enemies in a wide area. (150 SP)</li>
+            </ul>
+        </div>
+        
+        <a href="../character-roster.html" class="back-button">Back to Roster</a>
+        <a href="akechi.html" class="back-button">Next: Goro Akechi</a>
+    </div>
+</body>
+</html>
 
