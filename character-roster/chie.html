@@ -1,1 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chie Satonaka - Persona Phantom Arena</title>
+    <style>
+        body {
+            background: url('../images/chie_bg.png') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: rgba(34, 34, 34, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+        }
+        .character-image {
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.7);
+            transition: transform 0.3s ease;
+        }
+        .character-image:hover {
+            transform: scale(1.05);
+        }
+        .moveset {
+            background-color: rgba(51, 51, 51, 0.9);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+            margin-top: 10px;
+            text-align: left;
+        }
+        .moveset ul {
+            list-style-type: none;
+            padding: 0;
+            color: #ddd;
+        }
+        .moveset ul li {
+            margin: 5px 0;
+        }
+        .moveset strong {
+            color: #ffcc00;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            text-decoration: none;
+            color: white;
+            background: red;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .back-button:hover {
+            background: darkred;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chie Satonaka</h1>
+        <p class="quote">"I'm always up for a challenge!"</p>
+        
+        <img src="../images/chie.png" alt="Chie Satonaka" class="character-image">
+        
+        <h2>Backstory</h2>
+        <p>Chie Satonaka is an energetic and fearless fighter with a passion for martial arts movies. 
+        As a member of the Investigation Team, she wields her Persona, Tomoe, using powerful kicks and ice-based techniques.</p>
+
+        <h2>Persona: Tomoe</h2>
+        <p>Tomoe enhances Chie's raw combat abilities, granting her devastating kicks and ice-infused attacks.</p>
+        
+        <h2>Character Stats</h2>
+        <ul>
+            <li><strong>Role:</strong> Striker (DPS)</li>
+            <li><strong>Max SP:</strong> 220</li>
+            <li><strong>Mobility:</strong> High</li>
+            <li><strong>Primary Attribute:</strong> Ice Damage</li>
+        </ul>
+
+        <h2>Moveset & SP Costs</h2>
+        <div class="moveset">
+            <ul>
+                <li><strong>Basic Attack (R2):</strong> Delivers rapid martial arts kicks. (No SP)</li>
+                <li><strong>Holding R2:</strong> Charges up for a devastating kick. (No SP, Short Cooldown)</li>
+                <li><strong>L2 - Acrobat Dodge:</strong> Performs an evasive roll to avoid attacks.</li>
+                <li><strong>Triangle - Bufudyne:</strong> Unleashes a powerful ice strike. (35 SP)</li>
+                <li><strong>L1 - Dragon Kick:</strong> Launches enemies into the air with a high-speed kick. (40 SP)</li>
+                <li><strong>R1 - Power Charge:</strong> Enhances the next attack for massive damage. (50 SP)</li>
+                <li><strong>Ultimate - Tomoe’s Meteor Kick:</strong> Chie launches into the air and delivers a devastating ground-shattering kick. (120 SP)</li>
+            </ul>
+        </div>
+        
+        <a href="../character-roster.html" class="back-button">Back to Roster</a>
+        <a href="kasumi.html" class="back-button">Next: Kasumi Yoshizawa</a>
+    </div>
+</body>
+</html>
 
