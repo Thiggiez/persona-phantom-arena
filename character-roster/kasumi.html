@@ -1,1 +1,109 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasumi Yoshizawa - Persona Phantom Arena</title>
+    <style>
+        body {
+            background: url('../images/kasumi_bg.png') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: rgba(34, 34, 34, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+        }
+        .character-image {
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.7);
+            transition: transform 0.3s ease;
+        }
+        .character-image:hover {
+            transform: scale(1.05);
+        }
+        .moveset {
+            background-color: rgba(51, 51, 51, 0.9);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+            margin-top: 10px;
+            text-align: left;
+        }
+        .moveset ul {
+            list-style-type: none;
+            padding: 0;
+            color: #ddd;
+        }
+        .moveset ul li {
+            margin: 5px 0;
+        }
+        .moveset strong {
+            color: #ffcc00;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            text-decoration: none;
+            color: white;
+            background: red;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .back-button:hover {
+            background: darkred;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Kasumi Yoshizawa</h1>
+        <p class="quote">"I will dance my way to victory!"</p>
+        
+        <img src="../images/kasumi.png" alt="Kasumi Yoshizawa" class="character-image">
+        
+        <h2>Backstory</h2>
+        <p>Kasumi Yoshizawa is an elite gymnast who joins the Phantom Thieves with a determination to uphold justice. 
+        With her Persona, Cendrillon, she delivers graceful yet deadly sword attacks imbued with Bless energy.</p>
+
+        <h2>Persona: Cendrillon</h2>
+        <p>Cendrillon enhances Kasumi’s agility and finesse, allowing for swift, high-flying acrobatics and Bless-infused slashes.</p>
+        
+        <h2>Character Stats</h2>
+        <ul>
+            <li><strong>Role:</strong> Striker (DPS)</li>
+            <li><strong>Max SP:</strong> 250</li>
+            <li><strong>Mobility:</strong> Very High</li>
+            <li><strong>Primary Attribute:</strong> Bless Damage</li>
+        </ul>
+
+        <h2>Moveset & SP Costs</h2>
+        <div class="moveset">
+            <ul>
+                <li><strong>Basic Attack (R2):</strong> Elegant saber strikes. (No SP)</li>
+                <li><strong>Holding R2:</strong> Performs an acrobatic twirl, slashing multiple times. (No SP)</li>
+                <li><strong>L2 - Phantom Step:</strong> Performs a quick aerial dash.</li>
+                <li><strong>Triangle - Bless Strike:</strong> Sends out a radiant sword slash. (30 SP)</li>
+                <li><strong>L1 - Divine Grace:</strong> Temporarily boosts attack speed. (40 SP)</li>
+                <li><strong>R1 - Acrobat Combo:</strong> Aerial spin into a downward strike. (50 SP)</li>
+                <li><strong>Ultimate - Cendrillon’s Finale:</strong> Kasumi ascends mid-air and unleashes a massive, elegant Bless-infused slash. (150 SP)</li>
+            </ul>
+        </div>
+        
+        <a href="../character-roster.html" class="back-button">Back to Roster</a>
+        <a href="sophia.html" class="back-button">Next: Sophia</a>
+    </div>
+</body>
+</html>
