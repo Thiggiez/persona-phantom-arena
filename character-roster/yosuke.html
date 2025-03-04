@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yosuke Hanamura - Persona Phantom Arena</title>
+    <style>
+        body {
+            background: url('../images/yosuke_bg.png') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: rgba(34, 34, 34, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+        }
+        .character-image {
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.7);
+            transition: transform 0.3s ease;
+        }
+        .character-image:hover {
+            transform: scale(1.05);
+        }
+        .moveset {
+            background-color: rgba(51, 51, 51, 0.9);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+            margin-top: 10px;
+            text-align: left;
+        }
+        .moveset ul {
+            list-style-type: none;
+            padding: 0;
+            color: #ddd;
+        }
+        .moveset ul li {
+            margin: 5px 0;
+        }
+        .moveset strong {
+            color: #ffcc00;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            text-decoration: none;
+            color: white;
+            background: red;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .back-button:hover {
+            background: darkred;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Yosuke Hanamura</h1>
+        <p class="quote">"Let's do this, partner!"</p>
+        
+        <img src="../images/yosuke.png" alt="Yosuke Hanamura" class="character-image">
+        
+        <h2>Backstory</h2>
+        <p>Yosuke Hanamura is the energetic best friend of the Investigation Team. He’s quick-witted and even quicker on his feet, using his Persona, Jiraiya, to unleash rapid wind-based strikes and swift melee combos. with dreams of being a hero.  
+         
+        he takes down enemies with overwhelming strength and unpredictable attacks.</p>
+
+        <h2>Persona: Jiraiya</h2>
+        <p>Jiraiya enhances Yosuke’s speed and agility, allowing him to rapidly strike foes with kunai while controlling the battlefield with wind magic. 
+        allowing him to excel at both melee combat and magical offense.</p>
+        
+        <h2>Character Stats</h2>
+        <ul>
+            <li><strong>Role:</strong> Striker (DPS)</li>
+            <li><strong>Max SP:</strong> 200</li>
+            <li><strong>Mobility:</strong> Low</li>
+            <li><strong>Primary Attribute:</strong> Wind & Melee Damage</li>
+        </ul>
+
+        <h2>Moveset & SP Costs</h2>
+        <div class="moveset">
+            <ul>
+                <li><strong>Basic Attack (R2):</strong> Slashes rapidly with his dual kunai. (No SP)</li>
+                <li><strong>Holding R2:</strong> Throws kunai at enemies for light ranged damage. (No SP, Limited Uses: 5 kunai per refill)</li>
+                <li><strong>L2 - Phantom Step:</strong> Quickly dashes in any direction, covering more distance than most. (No SP, Short Cooldown)</li>
+                <li><strong>Triangle - Garudyne:</strong> Unleashes a powerful wind slash that travels forward, damaging enemies in a straight line. (35 SP)</li>
+                <li><strong>L1 - Sukukaja:</strong> Increases Yosuke’s movement speed and attack speed for 8 seconds. (40 SP, Cooldown: 12s)</li>
+                <li><strong>R1 - Gale Strike:</strong> Yosuke performs a spinning aerial slash that hits all enemies around him. (50 SP, Can be used mid-air)</li>
+                <li><strong>Ultimate - Hurricane Frenzy:</strong> Yosuke calls upon Jiraiya to summon a massive cyclone, trapping enemies in a vortex of slicing wind attacks before sending them flying. (150 SP, Large AoE)</li>
+            </ul>
+        </div>
+        
+        <a href="../character-roster.html" class="back-button">Back to Roster</a>
+        <a href="adachi.html" class="back-button">Next: Tohru Adachi</a>
+    </div>
+</body>
+</html>
 
