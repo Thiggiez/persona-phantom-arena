@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Modes - Persona Phantom Arena</title>
+    <style>
+        body {
+            background: url('../images/game_modes_bg.png') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: rgba(34, 34, 34, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+        }
+        .game-mode {
+            margin-bottom: 30px;
+        }
+        .game-mode img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.7);
+            margin-top: 10px;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            text-decoration: none;
+            color: white;
+            background: red;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: darkred;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Game Modes</h1>
+        <p>Explore the different game modes available in Persona Phantom Arena.</p>
+
+        <div class="game-mode">
+            <h2>Phantom Front</h2>
+            <img src="../images/domination.png" alt="Domination Mode">
+            <p>Two teams fight to control a single point in a contested area.</p>
+            <a href="phantom-front.html" class="button">Learn More</a>
+        </div>
+
+        <div class="game-mode">
+            <h2>Payload Pursuit</h2>
+            <img src="../images/convoy.png" alt="Convoy Mode">
+            <p>One team must escort a moving vehicle while the other team tries to stop them.</p>
+            <a href="payload-pursuit.html" class="button">Learn More</a>
+        </div>
+
+        <div class="game-mode">
+            <h2>Stronghold Siege</h2>
+            <img src="../images/convergence.png" alt="Convergence Mode">
+            <p>A hybrid mode where attackers must capture a point before escorting a vehicle.</p>
+            <a href="stronghold-siege.html" class="button">Learn More</a>
+        </div>
+
+        <a href="index.html" class="button">Back to Home</a>
+    </div>
+</body>
+</html>
